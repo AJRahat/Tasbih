@@ -15,7 +15,12 @@ let subCounter=0;
 let alCounter=0;
 let allCounter=0;
 // Actions
-
+function startBtn(){
+    const startBtn=document.getElementById("startBtn");
+    const nextPage=document.getElementById("mainPage");
+    startBtn.classList.add('hidden');
+    nextPage.classList.remove('hidden');
+}
 // Subhanallah
 subhanallahIncrimentBtn.addEventListener('click',function(){
     if(subCounter===33){
